@@ -1,0 +1,84 @@
+* {
+  text-align: center;
+}
+
+.title {
+  margin: 2rem;
+}
+
+.nav-links {
+  text-decoration: underline;
+}
+
+.nav-links,
+.portfolio-name {
+  font-size: 0.5125rem;
+}
+
+.list-group {
+  margin: 2rem 10%;
+}
+
+.portfolio-image {
+  border-radius: 50%;
+  margin-right: 0.25rem;
+}
+
+.header {
+  border-bottom: 0.125rem solid black;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: max-content;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.grid .list-group > * {
+  min-height: 5rem;
+}
+
+.card {
+  width: 20rem;
+  max-height: 10rem;
+  margin: 2rem auto;
+  font-size: 0.75rem;
+}
+
+img.card-img {
+  min-width: 8rem;
+  width: 8rem;
+  margin: 1rem;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+.provided-services-card {
+  margin: 2rem;
+}
+
+.card-body {
+  overflow: auto;
+}
+
+@media screen and (min-width: 48rem) {
+  .grid {
+    grid-template-columns: repeat(2, max-content);
+  }
+}
+
+@media screen and (min-width: 72rem) {
+  .grid {
+    grid-template-columns: repeat(3, max-content);
+  }
+}
+
+/*
+  It is not a good practice to use !important, however
+  it is the only way I was able to overide the styling.
+  Now after the links have been visited they will be forced to
+  be changed to purple
+*/
+a:visited {
+  color: purple !important;
+}
